@@ -1,5 +1,6 @@
 import { FC } from "react";
+import "./Footer.less";
 
 export const Footer: FC = () => {
-  return <div>Footer</div>;
+  return <div className="footer">Footer</div>;
 };

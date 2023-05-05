@@ -10,6 +10,7 @@ import bigDog from "./big-dog.png";
 import headerImage from "./headline_image.png";
 import lessie from "./lessie.png";
 import meow from "./meow.png";
+import woof from "./woof.png";
 
 export {
   cat1,
@@ -24,4 +25,5 @@ export {
   headerImage,
   lessie,
   meow,
+  woof,
 };

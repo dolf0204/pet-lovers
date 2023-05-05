@@ -1,8 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
 :root {
     /* Colors */
-    --color-body-primary: #F2F2F2;
-    --color-body-galery: #F7F7F7;
+    --color-body-gallery: #FFFFFF;
+    --color-body-primary: #F7F7F7;
     --color-footer: #1D1D1D;
 
+    /* Initial font size */
+    --html-font-size: 20px;
+
+    /* Fonts */
+    --ff-primary: 'Open Sans';
+    --ff-secondary: 'Arial', sans-serif;
+    --ff-pagination: 'Inter', sans-serif;
 
 }
