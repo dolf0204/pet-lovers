@@ -2,26 +2,25 @@ import { FC } from "react";
 
 import { Layout } from "antd";
 
-// import "./AppRouter.less";
-
-import { RESPONSIVE_BREAKPOINTS } from "../../constants/resoponsiveBreakpoints";
-import { useWindowSizeHook } from "../../common/hooks/useWindowSizeHook";
+import "./Router.less";
+// import { useWindowSizeHook } from "../../common/hooks/useWindowSizeHook";
 import { SiteContent } from "../layout/SiteContent";
+// import { RESPONSIVE_BREAKPOINTS } from "../../constants/constants";
 
 export const Router: FC = () => {
-  const { windowWidth } = useWindowSizeHook();
+  // const { windowWidth } = useWindowSizeHook();
 
   return (
-    <Layout>
-      {windowWidth >= RESPONSIVE_BREAKPOINTS.lg ? (
+    <Layout className="desktop-size">
+      {/* {windowWidth <= RESPONSIVE_BREAKPOINTS.sm ? (
         <Layout className="mobile-size">
           <SiteContent />
         </Layout>
       ) : (
-        <div>
-          <SiteContent />
-        </div>
-      )}
+        <Layout className="desktop-size"> */}
+      <SiteContent />
+      {/* </Layout>
+      )} */}
     </Layout>
   );
 };

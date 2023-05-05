@@ -1,4 +1,5 @@
-import "./App.css";
+import "./App.less";
+
 import { Router } from "./components/router/Router";
 
 function App() {
