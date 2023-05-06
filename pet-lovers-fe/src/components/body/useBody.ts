@@ -21,7 +21,6 @@ export const useBody = () => {
   };
 
   const onSubmit = (values: IAdopt<number>) => {
-    debugger;
     console.log(values);
     openNotification(
       "Congratulations",

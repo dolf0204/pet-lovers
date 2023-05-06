@@ -8,6 +8,7 @@ interface IProps {
   content?: JSX.Element;
   closable?: boolean;
   onCancel: () => void;
+  className?: string;
 }
 
 export const ModalComponent: FC<IProps> = ({
@@ -17,6 +18,7 @@ export const ModalComponent: FC<IProps> = ({
   width,
   closable = true,
   onCancel,
+  className,
 }) => {
   return (
     <Modal
@@ -28,6 +30,7 @@ export const ModalComponent: FC<IProps> = ({
       destroyOnClose={true}
       footer={null}
       onCancel={onCancel}
+      className={className}
     >
       {content && <div>{content}</div>}
     </Modal>

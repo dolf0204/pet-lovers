@@ -5,12 +5,14 @@ import { Body } from "../body/Body";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
 import "./SiteContent.css";
+import { CookieBanner } from "../../common/components/cookie-banner/CookieBanner";
 
 const { Content } = Layout;
 
 export const SiteContent: FC = () => {
   return (
     <Content className="content">
+      <CookieBanner></CookieBanner>
       <Header></Header>
       <Body></Body>
       <Footer></Footer>

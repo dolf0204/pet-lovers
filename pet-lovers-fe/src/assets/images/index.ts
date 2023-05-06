@@ -18,6 +18,7 @@ import carousel1 from "./carousel1.png";
 import carousel2 from "./carousel2.png";
 import carousel3 from "./carousel3.png";
 import dalmatianPattern from "./dalmatian-pattern.jpg";
+import cookieBanner from "./cookie-banner.png";
 
 export {
   cat1,
@@ -40,4 +41,5 @@ export {
   carousel2,
   carousel3,
   dalmatianPattern,
+  cookieBanner,
 };

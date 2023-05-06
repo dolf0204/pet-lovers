@@ -1,7 +1,5 @@
 import { FC } from "react";
-
 import { Layout } from "antd";
-
 import "./Router.less";
 // import { useWindowSizeHook } from "../../common/hooks/useWindowSizeHook";
 import { SiteContent } from "../layout/SiteContent";
