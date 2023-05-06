@@ -11,6 +11,12 @@ import headerImage from "./headline_image.png";
 import lessie from "./lessie.png";
 import meow from "./meow.png";
 import woof from "./woof.png";
+import hotDog from "./hot-dog.png";
+import arrowLeft from "./arrowLeft.png";
+import arrowRight from "./arrowRight.png";
+import carousel1 from "./carousel1.png";
+import carousel2 from "./carousel2.png";
+import carousel3 from "./carousel3.png";
 
 export {
   cat1,
@@ -26,4 +32,10 @@ export {
   lessie,
   meow,
   woof,
+  hotDog,
+  arrowLeft,
+  arrowRight,
+  carousel1,
+  carousel2,
+  carousel3,
 };
