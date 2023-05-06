@@ -27,27 +27,27 @@ export const galleryImages = [
     alt: "cat3",
   },
   {
-    id: 3,
+    id: 4,
     src: cat4,
     alt: "cat4",
   },
   {
-    id: 3,
+    id: 5,
     src: cat5,
     alt: "cat5",
   },
   {
-    id: 3,
+    id: 6,
     src: cat6,
     alt: "cat6",
   },
   {
-    id: 3,
+    id: 7,
     src: cat7,
     alt: "cat7",
   },
   {
-    id: 3,
+    id: 8,
     src: cat8,
     alt: "cat8",
   },

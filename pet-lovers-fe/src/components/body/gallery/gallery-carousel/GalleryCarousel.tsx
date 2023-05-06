@@ -6,10 +6,8 @@ import { Image } from "antd";
 import { useGalleryCarousel } from "./useGalleryCarousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import { arrowLeft, arrowRight } from "../../../../assets/images";
 import { images } from "./constants/carouselImages";
-import { carouselSettings } from "./constants/carouselSettings";
 
 export const GalleryCarousel: FC = () => {
   const CustomPrevArrow = (props: any) => {
@@ -39,20 +37,25 @@ export const GalleryCarousel: FC = () => {
       />
     );
   };
-  const { sliderRef, goToPrevSlide, goToNextSlide } = useGalleryCarousel();
+
+  const { currentSlide, nextSlide, prevSlide } = useGalleryCarousel();
 
   return (
-    <div>
-      <Slider {...carouselSettings} ref={sliderRef}>
+    <div className="carousel-container">
+      <div
+        className="carousel"
+        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+      >
         {images.map((image) => (
-          <div key={image.id} className="carousel-image-container">
-            <img src={image.src} />
+          <div key={image.id} className="slide">
+            <img src={image.src}></img>
           </div>
         ))}
-      </Slider>
+      </div>
+
       <div className="arrow-container">
-        <CustomPrevArrow onClick={goToPrevSlide} />
-        <CustomNextArrow onClick={goToNextSlide} />
+        <CustomPrevArrow onClick={prevSlide}></CustomPrevArrow>
+        <CustomNextArrow onClick={nextSlide}></CustomNextArrow>
       </div>
     </div>
   );

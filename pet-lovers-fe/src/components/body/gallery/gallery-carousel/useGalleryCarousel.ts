@@ -1,25 +1,21 @@
-import { useRef } from "react";
-
-import Slider from "react-slick";
+import { useState } from "react";
+import { images } from "./constants/carouselImages";
 
 export const useGalleryCarousel = () => {
-  const sliderRef = useRef<Slider>(null);
-
-  const goToPrevSlide = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickPrev();
-    }
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const nextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
   };
 
-  const goToNextSlide = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickNext();
-    }
+  const prevSlide = () => {
+    setCurrentSlide(
+      (prevSlide) => (prevSlide - 1 + images.length) % images.length
+    );
   };
 
   return {
-    sliderRef,
-    goToPrevSlide,
-    goToNextSlide,
+    currentSlide,
+    nextSlide,
+    prevSlide,
   };
 };
