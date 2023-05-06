@@ -11,43 +11,43 @@ import {
 
 export const galleryImages = [
   {
-    id: 1,
+    id: 0,
     src: cat1,
 
     alt: "cat1",
   },
   {
-    id: 2,
+    id: 1,
     src: cat2,
     alt: "cat2",
   },
   {
-    id: 3,
+    id: 2,
     src: cat3,
     alt: "cat3",
   },
   {
-    id: 4,
+    id: 3,
     src: cat4,
     alt: "cat4",
   },
   {
-    id: 5,
+    id: 4,
     src: cat5,
     alt: "cat5",
   },
   {
-    id: 6,
+    id: 5,
     src: cat6,
     alt: "cat6",
   },
   {
-    id: 7,
+    id: 6,
     src: cat7,
     alt: "cat7",
   },
   {
-    id: 8,
+    id: 7,
     src: cat8,
     alt: "cat8",
   },

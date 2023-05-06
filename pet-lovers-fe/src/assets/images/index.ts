@@ -17,6 +17,7 @@ import arrowRight from "./arrowRight.png";
 import carousel1 from "./carousel1.png";
 import carousel2 from "./carousel2.png";
 import carousel3 from "./carousel3.png";
+import dalmatianPattern from "./dalmatian-pattern.jpg";
 
 export {
   cat1,
@@ -38,4 +39,5 @@ export {
   carousel1,
   carousel2,
   carousel3,
+  dalmatianPattern,
 };
