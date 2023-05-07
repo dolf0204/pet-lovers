@@ -1,6 +1,6 @@
 import mobileCat1 from "./mobile-cat_1.png";
 import mobileCat2 from "./mobile-cat_2.png";
-import mobileCat3 from "./mobile-cat_4.png";
+import mobileCat3 from "./mobile-cat_3.png";
 import mobileCat4 from "./mobile-cat_4.png";
 import mobileCat5 from "./mobile-cat_5.png";
 import mobileCat6 from "./mobile-cat_6.png";

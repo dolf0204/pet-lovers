@@ -1,15 +1,16 @@
 import { FC } from "react";
-import { galleryImages } from "./constants/galleryImages";
+
 import { Col, Form, Image, Row } from "antd";
+import { mobileGalleryImages } from "./constants/mobileGalleryImages";
 // import "./GalleryHeader.less";
 
-export const GalleryImages: FC = () => {
+export const MobileGalleryImages: FC = () => {
   return (
-    <div className="gallery-images">
+    <div className="mobile-gallery-images">
       <Form>
-        <Row gutter={[30, 0]}>
-          {galleryImages.map((image) => (
-            <Col span={6} key={image.id}>
+        <Row gutter={[30, 15]}>
+          {mobileGalleryImages.map((image) => (
+            <Col span={12} key={image.id}>
               <Form.Item>
                 <Image src={image.src}></Image>
               </Form.Item>

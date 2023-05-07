@@ -1,10 +1,10 @@
 import { FC } from "react";
-import "./GalleryHeader.less";
+import "./MobileGalleryHeader.less";
 
-export const GalleryHeader: FC = () => {
+export const MobileGalleryHeader: FC = () => {
   return (
-    <div className="gallery-header">
-      <p className="gallery-header-title">Gallery</p>
+    <div className="mobile-gallery-header">
+      <p className="mobile-gallery-header-title">Gallery</p>
     </div>
   );
 };

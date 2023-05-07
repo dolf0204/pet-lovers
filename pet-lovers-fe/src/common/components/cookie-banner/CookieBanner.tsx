@@ -4,7 +4,11 @@ import { ModalComponent } from "../modal/Modal";
 import { useCookieBanner } from "./useCookieBanner";
 import { CookieModal } from "./cookie-modal/CookieModal";
 
-export const CookieBanner: FC = () => {
+interface IProps {
+  width: number;
+}
+
+export const CookieBanner: FC<IProps> = ({ width }) => {
   const { isModalVisible, closeModal } = useCookieBanner();
 
   return (
@@ -14,7 +18,7 @@ export const CookieBanner: FC = () => {
           onCancel={closeModal}
           title=""
           visible={true}
-          width={600}
+          width={width}
           closable={true}
           className="cookie-banner-modal"
           content={<CookieModal onSubmit={closeModal} />}

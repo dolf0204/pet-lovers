@@ -1,20 +1,24 @@
-import { carousel1, carousel2, carousel3 } from "../../../../../assets/images";
+import {
+  mobileBigDog,
+  mobileHotDog,
+  mobileLessie,
+} from "../../../../../../assets/images/mobile";
 
-export const images = [
+export const mobileCarouselimages = [
   {
     id: 0,
-    src: carousel1,
+    src: mobileBigDog,
 
     alt: "Big dog",
   },
   {
     id: 1,
-    src: carousel2,
+    src: mobileHotDog,
     alt: "Hot dog",
   },
   {
     id: 2,
-    src: carousel3,
+    src: mobileLessie,
     alt: "Lessie",
   },
 ];

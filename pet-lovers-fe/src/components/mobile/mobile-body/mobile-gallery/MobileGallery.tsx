@@ -1,15 +1,15 @@
 import { FC } from "react";
-import "./Gallery.less";
-import { GalleryHeader } from "./gallery-header/GalleryHeader";
-import { GalleryCarousel } from "./gallery-carousel/GalleryCarousel";
-import { GalleryImages } from "./gallery-images/GalleryImages";
+import "./MobileGallery.less";
+import { MobileGalleryHeader } from "./mobile-gallery-header/MobileGalleryHeader";
+import { MobileGalleryCarousel } from "./mobile-gallery-carousel/MobileGalleryCarousel";
+import { MobileGalleryImages } from "./mobile-gallery-images/MobileGalleryImages";
 
-export const Gallery: FC = () => {
+export const MobileGallery: FC = () => {
   return (
-    <div className="gallery">
-      <GalleryHeader></GalleryHeader>
-      <GalleryCarousel></GalleryCarousel>
-      <GalleryImages></GalleryImages>
+    <div className="mobile-gallery">
+      <MobileGalleryHeader></MobileGalleryHeader>
+      <MobileGalleryCarousel></MobileGalleryCarousel>
+      <MobileGalleryImages></MobileGalleryImages>
     </div>
   );
 };

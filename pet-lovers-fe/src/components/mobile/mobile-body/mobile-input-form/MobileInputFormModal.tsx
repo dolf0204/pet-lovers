@@ -1,11 +1,11 @@
 import { FC, useEffect } from "react";
 import { Button, Col, Form, Row } from "antd";
-import { FORM_LAYOUT } from "./constants/formLayout";
-import { INPUT_FORM_FIELDS } from "./constants/inputFormFieldNames";
-import { Input } from "../../../common/components/input";
-import { Select } from "../../../common/components/select/Select";
-import { useInputFormModal } from "./useInputFormModal";
-import { IAdopt } from "../../models/IAdopt";
+import { FORM_LAYOUT } from "../../../body/input-form/constants/formLayout";
+import { INPUT_FORM_FIELDS } from "../../../body/input-form/constants/inputFormFieldNames";
+import { useInputFormModal } from "../../../body/input-form/useInputFormModal";
+import { IAdopt } from "../../../models/IAdopt";
+import { Input } from "../../../../common/components/input";
+import { Select } from "../../../../common/components/select/Select";
 
 const { Item } = Form;
 
@@ -14,7 +14,7 @@ interface IProps {
   onCancel: () => void;
 }
 
-export const InputFormModal: FC<IProps> = ({ onSubmit, onCancel }) => {
+export const MobileInputFormModal: FC<IProps> = ({ onSubmit, onCancel }) => {
   const { petOptions, form } = useInputFormModal();
 
   useEffect(() => {

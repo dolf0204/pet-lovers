@@ -1,54 +1,54 @@
 import {
-  cat1,
-  cat2,
-  cat3,
-  cat4,
-  cat5,
-  cat6,
-  cat7,
-  cat8,
-} from "../../../../../assets/images";
+  mobileCat1,
+  mobileCat2,
+  mobileCat3,
+  mobileCat4,
+  mobileCat5,
+  mobileCat6,
+  mobileCat7,
+  mobileCat8,
+} from "../../../../../../assets/images/mobile";
 
-export const galleryImages = [
+export const mobileGalleryImages = [
   {
     id: 0,
-    src: cat1,
+    src: mobileCat1,
 
     alt: "cat1",
   },
   {
     id: 1,
-    src: cat2,
+    src: mobileCat2,
     alt: "cat2",
   },
   {
     id: 2,
-    src: cat3,
+    src: mobileCat3,
     alt: "cat3",
   },
   {
     id: 3,
-    src: cat4,
+    src: mobileCat4,
     alt: "cat4",
   },
   {
     id: 4,
-    src: cat5,
+    src: mobileCat5,
     alt: "cat5",
   },
   {
     id: 5,
-    src: cat6,
+    src: mobileCat6,
     alt: "cat6",
   },
   {
     id: 6,
-    src: cat7,
+    src: mobileCat7,
     alt: "cat7",
   },
   {
     id: 7,
-    src: cat8,
+    src: mobileCat8,
     alt: "cat8",
   },
 ];

@@ -74,10 +74,10 @@ export const InputFormModal: FC<IProps> = ({ onSubmit, onCancel }) => {
           </Item>
         </Col>
         <Row gutter={[20, 10]} justify="center">
-          <Col xs={24} sm={6}>
+          <Col>
             <Button htmlType="submit">Adopt!</Button>
           </Col>
-          <Col xs={24} sm={6}>
+          <Col>
             <Button htmlType="button" onClick={onCancel}>
               {"Cancel :("}
             </Button>

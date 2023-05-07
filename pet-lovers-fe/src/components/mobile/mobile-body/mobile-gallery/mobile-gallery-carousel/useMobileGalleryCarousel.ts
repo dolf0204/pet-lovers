@@ -1,15 +1,19 @@
 import { useState } from "react";
-import { images } from "./constants/mobileCarouselImages";
+import { mobileCarouselimages } from "./constants/mobileCarouselImages";
 
-export const useGalleryCarousel = () => {
+export const useMobileGalleryCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const nextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
+    setCurrentSlide(
+      (prevSlide) => (prevSlide + 1) % mobileCarouselimages.length
+    );
   };
 
   const prevSlide = () => {
     setCurrentSlide(
-      (prevSlide) => (prevSlide - 1 + images.length) % images.length
+      (prevSlide) =>
+        (prevSlide - 1 + mobileCarouselimages.length) %
+        mobileCarouselimages.length
     );
   };
 

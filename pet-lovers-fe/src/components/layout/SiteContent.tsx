@@ -12,7 +12,7 @@ const { Content } = Layout;
 export const SiteContent: FC = () => {
   return (
     <Content className="content">
-      <CookieBanner></CookieBanner>
+      <CookieBanner width={600}></CookieBanner>
       <Header></Header>
       <Body></Body>
       <Footer></Footer>
