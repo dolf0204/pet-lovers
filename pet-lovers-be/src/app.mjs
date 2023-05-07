@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "..", "public")));
 app.use(
   cors({
-    origin: "http://localhost:8000",
+    origin: "http://localhost:3000",
   })
 );
 

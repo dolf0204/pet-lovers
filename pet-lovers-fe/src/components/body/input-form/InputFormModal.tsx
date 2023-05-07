@@ -31,15 +31,15 @@ export const InputFormModal: FC<IProps> = ({ onSubmit, onCancel }) => {
       >
         <Col span={24}>
           <Item
-            name={INPUT_FORM_FIELDS.NAME.name}
+            name={INPUT_FORM_FIELDS.USER_NAME.name}
             rules={[
               {
                 required: true,
-                message: INPUT_FORM_FIELDS.NAME.message,
+                message: INPUT_FORM_FIELDS.USER_NAME.message,
               },
             ]}
           >
-            <Input label={INPUT_FORM_FIELDS.NAME.label} required />
+            <Input label={INPUT_FORM_FIELDS.USER_NAME.label} required />
           </Item>
           <Item
             name={INPUT_FORM_FIELDS.EMAIL.name}

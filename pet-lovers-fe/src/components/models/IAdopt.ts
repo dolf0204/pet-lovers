@@ -1,5 +1,5 @@
 export type IAdopt<T> = {
-  name: string;
+  username: string;
   email: string;
   pet: T;
 };

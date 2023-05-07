@@ -1,6 +1,6 @@
 const INPUT_FORM_FIELDS = {
   FORM_NAME: "input-form",
-  NAME: { name: "name", label: "Name", message: "Name is required" },
+  USER_NAME: { name: "username", label: "Name", message: "Name is required" },
   EMAIL: {
     name: "email",
     label: "Email",
