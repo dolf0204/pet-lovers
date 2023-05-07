@@ -1,7 +1,6 @@
 import { FC } from "react";
 import { galleryImages } from "./constants/galleryImages";
 import { Col, Form, Image, Row } from "antd";
-// import "./GalleryHeader.less";
 
 export const GalleryImages: FC = () => {
   return (

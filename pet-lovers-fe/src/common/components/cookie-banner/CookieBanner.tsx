@@ -1,5 +1,4 @@
 import { FC } from "react";
-import "./CookieBanner.less";
 import { ModalComponent } from "../modal/Modal";
 import { useCookieBanner } from "./useCookieBanner";
 import { CookieModal } from "./cookie-modal/CookieModal";

@@ -6,7 +6,6 @@ export const useWindowSizeHook = () => {
   const resize = () => setWindowWidth(window.innerWidth);
 
   useEffect(() => {
-    debugger;
     window.addEventListener("resize", resize);
 
     return () => window.removeEventListener("resize", resize);

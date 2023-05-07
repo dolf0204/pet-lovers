@@ -1,6 +1,5 @@
 import { FC } from "react";
 import "./MobileGalleryCarousel.less";
-
 import { Image } from "antd";
 import { useMobileGalleryCarousel } from "./useMobileGalleryCarousel";
 

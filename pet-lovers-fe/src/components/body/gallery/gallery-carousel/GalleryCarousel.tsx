@@ -2,8 +2,6 @@ import { FC } from "react";
 import "./GalleryCarousel.less";
 import { Image } from "antd";
 import { useGalleryCarousel } from "./useGalleryCarousel";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 import { arrowLeft, arrowRight } from "../../../../assets/images";
 import { images } from "./constants/carouselImages";
 

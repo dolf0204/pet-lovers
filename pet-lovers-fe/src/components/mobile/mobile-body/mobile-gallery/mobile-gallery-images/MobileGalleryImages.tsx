@@ -1,8 +1,6 @@
 import { FC } from "react";
-
 import { Col, Form, Image, Row } from "antd";
 import { mobileGalleryImages } from "./constants/mobileGalleryImages";
-// import "./GalleryHeader.less";
 
 export const MobileGalleryImages: FC = () => {
   return (
