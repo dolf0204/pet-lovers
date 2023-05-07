@@ -6,7 +6,7 @@ import { headerImage } from "../../assets/images";
 export const Header: FC = () => {
   return (
     <div className="headline-image">
-      <Image width={1440} src={headerImage} />
+      <Image src={headerImage} />
     </div>
   );
 };

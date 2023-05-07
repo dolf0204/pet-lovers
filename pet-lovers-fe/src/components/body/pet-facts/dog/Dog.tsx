@@ -9,7 +9,7 @@ export const Dog: FC = () => {
     <div className="pet-facts-dog">
       <DogDescription></DogDescription>
 
-      <Image width={445} height={445} src={woof} />
+      <Image src={woof} />
     </div>
   );
 };

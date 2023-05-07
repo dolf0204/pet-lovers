@@ -7,7 +7,7 @@ import { CatDescription } from "./cat-description/CatDescription";
 export const Cat: FC = () => {
   return (
     <div className="pet-facts-cat">
-      <Image width={445} height={445} src={meow} />
+      <Image src={meow} />
       <CatDescription></CatDescription>
     </div>
   );
