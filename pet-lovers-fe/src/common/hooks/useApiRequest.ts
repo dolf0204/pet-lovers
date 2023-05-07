@@ -14,8 +14,6 @@ export const useApi = () => {
 
   async function httpPostPetAdopter(petAdopter: IAdopt<string>) {
     try {
-      debugger;
-
       return await ky.post(`${API_URL}/petAdopters`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
