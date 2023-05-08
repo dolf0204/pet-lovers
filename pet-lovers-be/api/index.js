@@ -23,7 +23,7 @@ app.use(
   })
 );
 
-app.get("/petAdopters", async (req, res) => {
+app.get("/", async (req, res) => {
   // const petAdopters = await prisma.petAdopter.findMany({});
   // res.json(petAdopters);
   res.send("This is my about route..... ");
