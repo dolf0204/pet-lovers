@@ -1,4 +1,4 @@
-import express from "express";
+// import express from "express";
 // import cors from "cors";
 // import path from "path";
 // import { fileURLToPath } from "url";
@@ -45,6 +45,7 @@ import express from "express";
 
 // module.exports = app;
 
+const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 8000;
 
