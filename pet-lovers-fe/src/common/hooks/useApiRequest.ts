@@ -2,8 +2,7 @@ import ky from "ky";
 import { IAdopt } from "../../components/models/IAdopt";
 
 export const useApi = () => {
-  // const API_URL = "http://localhost:8000";
-  const API_URL = "https://pet-lovers-fe-7y3a.vercel.app";
+  const API_URL = "http://localhost:8000";
 
   async function httpGetPetAdopters() {
     const response = await ky.get(`${API_URL}/petAdopters`);
