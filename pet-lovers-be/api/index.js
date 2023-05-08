@@ -47,7 +47,11 @@
 
 const express = require("express");
 const app = express();
+const PORT = process.env.PORT || 8000;
 
+app.listen(PORT, () => {
+  console.log(`API listening on PORT ${PORT} `);
+});
 // Define your routes and middleware here
 
 // Example route
