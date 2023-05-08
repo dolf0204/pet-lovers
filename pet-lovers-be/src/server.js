@@ -1,5 +1,8 @@
-import http from "http";
-import { app } from "./app.mjs";
+// import http from "http";
+// import { app } from "./app.js";
+
+const http = require("http");
+const app = require("./app");
 
 const PORT = process.env.PORT || 8000;
 
@@ -13,4 +16,4 @@ async function startServer() {
 
 startServer();
 
-export default server;
+// export default server;

@@ -45,18 +45,34 @@
 
 // module.exports = app;
 
-const express = require("express");
-const app = express();
+// const express = require("express");
+// const app = express();
+// const PORT = process.env.PORT || 8000;
+
+// app.listen(PORT, () => {
+//   console.log(`API listening on PORT ${PORT} `);
+// });
+
+// // Example route
+// app.get("/", (req, res) => {
+//   res.send("Hello, Express!");
+// });
+
+// module.exports = app;
+
+const http = require("http");
+const app = require("../src/app");
+
 const PORT = process.env.PORT || 8000;
 
-app.listen(PORT, () => {
-  console.log(`API listening on PORT ${PORT} `);
-});
-// Define your routes and middleware here
+const server = http.createServer(app);
 
-// Example route
-app.get("/", (req, res) => {
-  res.send("Hello, Express!");
-});
+async function startServer() {
+  server.listen(PORT, () => {
+    console.log("LISTENING ON", PORT);
+  });
+}
 
-module.exports = app;
+startServer();
+
+module.exports = server;
