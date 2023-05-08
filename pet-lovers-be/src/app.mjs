@@ -39,4 +39,5 @@ app.post("/petAdopters", async (req, res) => {
   res.json(post);
 });
 
-export { app };
+// export { app };
+module.exports = app;
