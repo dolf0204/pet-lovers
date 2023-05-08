@@ -23,7 +23,7 @@ export const Body: FC = () => {
         <ModalComponent
           title="Adopt a pet!"
           visible={isModalVisible}
-          width={600}
+          width={400}
           closable={true}
           onCancel={closeModal}
           content={
