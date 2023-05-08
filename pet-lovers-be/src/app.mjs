@@ -8,11 +8,11 @@ const __filename = fileURLToPath(import.meta.url);
 
 const __dirname = path.dirname(__filename);
 const app = express();
-const PORT = process.env.PORT || 8000;
+// const PORT = process.env.PORT || 8000;
 
-app.listen(PORT, () => {
-  console.log(`API listening on PORT ${PORT} `);
-});
+// app.listen(PORT, () => {
+//   console.log(`API listening on PORT ${PORT} `);
+// });
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "..", "public")));
 app.use(
@@ -39,5 +39,5 @@ app.post("/petAdopters", async (req, res) => {
   res.json(post);
 });
 
-// export { app };
-module.exports = app;
+export { app };
+// module.exports = app;
