@@ -1,17 +1,45 @@
-import http from "http";
-import { app } from "../src/app.mjs";
+import express from "express";
+import cors from "cors";
+import path from "path";
+import { fileURLToPath } from "url";
+import prisma from "./prisma.mjs";
 
+const __filename = fileURLToPath(import.meta.url);
+
+const __dirname = path.dirname(__filename);
+const app = express();
 const PORT = process.env.PORT || 8000;
 
-const server = http.createServer(app);
+app.listen(PORT, () => {
+  console.log(`API listening on PORT ${PORT} `);
+});
+app.use(express.json());
+app.use(express.static(path.join(__dirname, "..", "public")));
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    origin: "https://pet-lovers-fe.vercel.app",
+  })
+);
 
-async function startServer() {
-  server.listen(PORT, () => {
-    console.log("LISTENING ON", PORT);
+app.get("/petAdopters", async (req, res) => {
+  // const petAdopters = await prisma.petAdopter.findMany({});
+  // res.json(petAdopters);
+  res.send("This is my about route..... ");
+});
+
+app.post("/petAdopters", async (req, res) => {
+  const { email, username, pet } = req.body;
+  const post = await prisma.petAdopter.create({
+    data: {
+      email,
+      username,
+      pet,
+    },
   });
-}
+  res.json(post);
+});
 
-startServer();
+// export { app };
 
-// export default server;
-module.exports = server;
+module.exports = app;
