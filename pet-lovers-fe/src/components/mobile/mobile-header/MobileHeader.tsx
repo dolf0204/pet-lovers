@@ -5,7 +5,7 @@ import { mobileHeaderImage } from "../../../assets/images/mobile";
 export const MobileHeader: FC = () => {
   return (
     <div className="mobile-headline-image">
-      <Image src={mobileHeaderImage} />
+      <Image src={mobileHeaderImage} preview={false} />
     </div>
   );
 };
