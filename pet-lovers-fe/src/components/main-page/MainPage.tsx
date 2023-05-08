@@ -1,7 +1,4 @@
 import { FC } from "react";
-import { Body } from "../body/Body";
-import { Footer } from "../footer/Footer";
-import { Header } from "../header/Header";
 import { useWindowSizeHook } from "../../common/hooks/useWindowSizeHook";
 import { RESPONSIVE_BREAKPOINTS } from "../../constants/constants";
 import { Layout } from "antd";
