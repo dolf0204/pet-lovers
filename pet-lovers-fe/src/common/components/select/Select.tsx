@@ -13,6 +13,8 @@ interface IDefaultProps {
   disabled?: boolean;
   style?: any;
   required?: boolean;
+  testId?: string;
+  labelTestId?: string;
 }
 
 type ISingleProps = {
@@ -34,16 +36,19 @@ export const Select: FC<TSelectProps> = (props) => {
     disabled,
     style,
     required,
+    testId,
+    labelTestId,
   } = props;
 
   return (
-    <div className={`select ${className ?? ""}`}>
+    <div data-testid={labelTestId} className={`select ${className ?? ""}`}>
       {label && (
         <label htmlFor={name} className={`${!!required ? "is__required" : ""}`}>
           {label}
         </label>
       )}
       <AntSelect
+        data-testid={testId}
         allowClear={allowClear}
         onChange={onChange as any}
         className={`${className ?? ""}`}

@@ -10,12 +10,13 @@ interface IDefaultProps {
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
   disabled?: boolean;
   required?: boolean;
+  testId?: string;
 }
 
 type TProps = IDefaultProps;
 
 export const Input: FC<TProps> = (props) => {
-  const { label, name, onChange, disabled, required } = props;
+  const { label, name, onChange, disabled, required, testId } = props;
 
   return (
     <div className="input">
@@ -29,6 +30,7 @@ export const Input: FC<TProps> = (props) => {
         </label>
       )}
       <AntInput
+        data-testid={testId}
         disabled={disabled}
         onChange={onChange}
         name={name}

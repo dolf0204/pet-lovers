@@ -9,6 +9,7 @@ interface IProps {
   closable?: boolean;
   onCancel: () => void;
   className?: string;
+  testId?: string;
 }
 
 export const ModalComponent: FC<IProps> = ({
@@ -19,9 +20,11 @@ export const ModalComponent: FC<IProps> = ({
   closable = true,
   onCancel,
   className,
+  testId,
 }) => {
   return (
     <Modal
+      data-testid={testId}
       centered
       closable={closable}
       width={width}

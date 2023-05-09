@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Input component > mounting, and snapshot > should match snapshot 1`] = `
+<input
+  class="ant-input css-dev-only-do-not-override-yp8pcc input__input"
+  data-testid="input-test-id"
+  type="text"
+  value=""
+/>
+`;
