@@ -1,6 +1,5 @@
 import { Image } from "antd";
 import { FC } from "react";
-import "./MobileCat.less";
 import { MobileCatDescription } from "./mobile-cat-description/MobileCatDescription";
 import { mobileMeow } from "../../../../../assets/images/mobile";
 

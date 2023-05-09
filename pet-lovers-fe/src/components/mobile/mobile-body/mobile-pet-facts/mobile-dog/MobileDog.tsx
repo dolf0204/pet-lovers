@@ -1,6 +1,5 @@
 import { Image } from "antd";
 import { FC } from "react";
-import "./MobileDog.less";
 import { mobileWoof } from "../../../../../assets/images/mobile";
 import { MobileDogDescription } from "./mobile-dog-description/MobileDogDescription";
 

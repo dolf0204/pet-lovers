@@ -178,23 +178,3 @@ body {
     margin: 1% 5%;
   }
 }
-/* @media only screen and (max-width: 1600px) {
-  h1 {
-    font-size: 40px;
-    margin: 10%;
-  }
-  h2 {
-    font-size: 24px;
-    margin: 0;
-    line-height: 22px;
-    letter-spacing: 0.16px;
-    margin: 10px;
-
-  }
-  p {
-    font-size: 16px;
-    text-align: left;
-    color: #2B2B2B;
-    margin: 10px;
-  }
-} */
