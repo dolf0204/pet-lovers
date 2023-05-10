@@ -3,7 +3,7 @@ import "./Footer.less";
 import { PetFactsCom } from "./pet-facts-com/PetFactsCom";
 import { Contact } from "./contact-us/Contact";
 import { Brand } from "./brand/Brand";
-import { CopyWright } from "./copywright/CopyWright";
+import { Copyright } from "./copyright/Copyright";
 
 export const Footer: FC = () => {
   return (
@@ -13,8 +13,8 @@ export const Footer: FC = () => {
         <Brand></Brand>
         <Contact></Contact>
       </div>
-      <div className="footer-copywright">
-        <CopyWright></CopyWright>
+      <div className="footer-copyright">
+        <Copyright></Copyright>
       </div>
     </div>
   );

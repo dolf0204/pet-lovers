@@ -1,8 +1,8 @@
 import { FC } from "react";
 
-export const CopyWright: FC = () => {
+export const MobileCopyright: FC = () => {
   return (
-    <div className="copywright">
+    <div className="mobile-copyright">
       <p>
         Copyright is a legal right, existing in many countries, that grants the
         creator of an original work exclusive rights to determine whether, and
