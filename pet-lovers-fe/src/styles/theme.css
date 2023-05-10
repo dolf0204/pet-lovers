@@ -17,11 +17,5 @@
     --ff-secondary: 'Arial', sans-serif;
     --ff-pagination: 'Inter', sans-serif;
 
-    /* BreakPoints */
-    --width_sm: 400px;
-    --width_md: 600px;
-    --width_lg: 800px;
-    --width_xl: 1200px;
-    --width_xxl: 1600px;
 
 }
