@@ -7,9 +7,9 @@ import { CatDescription } from "./cat-description/CatDescription";
 export const Cat: FC = () => {
   return (
     <div className="pet-facts-cat">
-      <div>
-        <Image src={meow} />
-      </div>
+      {/* <div> */}
+      <Image src={meow} />
+      {/* </div> */}
       <CatDescription></CatDescription>
     </div>
   );
